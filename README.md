@@ -1,56 +1,68 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# PORT SCANNER
 
-> Description the project.
+> A port scanner for network utility tool used for probing a network host to discover open ports and services running on those ports. It operates by sending data packets to specific network addresses and port numbers and then analyzing the responses to determine which ports are open, closed, or filtered by firewalls.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Python3
+- GNU Nano
+- Socket
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](Coming Soon)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+In order to run this project you need:
+  #### python
 
 ### Setup
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone https://github.com/nickemma/port-scanner
+```
 
 ### Install
+Install this project with:
 
+```sh
+  cd port-scanner
+  pip3 install
+```
 ### Usage
 
-### Run tests
+To run the project, execute the following command:
+
+```sh
+  python3 port
+```
 
 ### Deployment
 
+You can deploy this project using:
+
+```sh
+  git push main
+```
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Techieemma](https://github.com/nickemma)
+- Twitter: [@techieemma](https://twitter.com/techieemma)
+- LinkedIn: [techieemma](https://linkedin.com/in/techieemma)
 
 ## 🤝 Contributing
 
@@ -58,15 +70,16 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+## ⭐️Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Coding Partners
+- LazyCoders
+
 
 ## 📝 License
 
