@@ -1,26 +1,25 @@
 import socket
-import termcolor
 
 def scan(target, ports):
+    print("\n" + "Starting Scan For Target " + target)
     for port in range(1, ports):
         scan_port(target, port)
 
-# Set the IP address and port number of the server to connect to in a function
 def scan_port(ipaddress, port):
     try:
         sock = socket.socket()
+        sock.settimeout(3)  # Increased timeout to 3 seconds
         sock.connect((ipaddress, port))
-        print(termcolor.colored("[+] Port Opened ", "green" + str(port)))
-        socket.close()
-    except:
-        print(termcolor.colored("[-] Port Closed ", "red" + str(port)))
+        print("[+] Port Opened " + str(port))
+        sock.close()
+    except Exception as e:
+        print("[!] An error occurred:", e)
 
-        
 targets = input("[*] Enter Targets To Scan (split them by ,): ")
-ports = input("[*] Enter How Many Ports You Want To Scan: ")
+ports = int(input("[*] Enter How Many Ports You Want To Scan: "))
 
 if "," in targets:
-    print(termcolor.colored("[*] Scanning Multiple Targets", "blue"))
+    print("[*] Scanning Multiple Targets")
     for ip_addr in targets.split(","):
         scan(ip_addr.strip(" "), ports)
 else:
