@@ -44,7 +44,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  python3 port
+  python3 main.py
 ```
 
 ### Deployment
